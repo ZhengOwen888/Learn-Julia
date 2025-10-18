@@ -36,3 +36,10 @@ typeof('🐶')
 
 🐶 = 10 # works too
 
+# \pi<tab>
+PI = π
+typeof(PI)
+
+# \euler<tab>
+EULER = ℯ
+typeof(EULER)
