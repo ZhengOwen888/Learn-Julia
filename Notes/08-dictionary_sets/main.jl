@@ -47,7 +47,11 @@ haskey(dog, :color)
 # comprehension
 dict_comprehension = Dict(string(i) => i^2 for i in 1:10)
 
+Dict(
+  0 => 10
+)
 # Sets
+
 empty_set = Set()
 
 my_set = Set([1, 2, 3, 3, 2, 1])
