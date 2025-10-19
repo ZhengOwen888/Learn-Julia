@@ -39,3 +39,25 @@ dog
 pop!(dog, :color)
 
 dog
+
+# contains
+:color in keys(dog)
+haskey(dog, :color)
+
+# comprehension
+dict_comprehension = Dict(string(i) => i^2 for i in 1:10)
+
+# Sets
+empty_set = Set()
+
+my_set = Set([1, 2, 3, 3, 2, 1])
+
+push!(my_set, 5)
+
+2 in my_set
+
+pop!(my_set, 2)
+
+# Union - union(set1, set2) - returns new set with unique items from both Sets
+# Intersect - intersect(set1, set2) - returns new set containing elements that appeared in both Sets
+# Difference - setdiff(set1, set2) - returns new set containing elements present in set1 but not in set2
