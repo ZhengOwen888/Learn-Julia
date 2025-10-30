@@ -22,12 +22,14 @@ end
 # recursion_closure.jl
 
 factorial = let fac
-  fac = n -> n <= 1 ? 1 : n * fac(n - 1)
+  fac = n -> (n <= 1) ? 1 : n * fac(n - 1)
 end
 
-fibonnci = let fib
-  fib = (n, n1 = 0, n2 = 1) -> n == 0 ? n1 : fib(n - 1, n2, n1 + n2)
+let factorial =  n -> (n <= 1) ? 1 : n * factorial(n - 1)
 end
 
-let tail
+factorial(10)
+
+fibonnaci = let fib
+  fib = (n, n1 = 0, n2 = 1) -> (n == 0) ? n1 : fib(n - 1, n2, n1 + n2)
 end
